@@ -54,7 +54,7 @@ function criarBarra(var_nome, var_avatar) {
   const status = varStatus;
 
   const audioNot = document.createElement('audio');
-  audioNot.src = 'https://igorlemoes.com.br/files/whatsapp/audio_whatsapp.mp3';
+  audioNot.src = 'https://github.com/wallacefaz/concurso/raw/main/audio_whatsapp.mp3';
   let mensagesLength = 0;
 
   setInterval(() => {
