@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Header</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+        .status {
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 14px;
+        }
+        .typing {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    Chat Bot
+    <span id="status" class="status typing">Digitando...</span>
+</div>
+
+<div style="margin-top: 60px;">
+    <!-- Conteúdo da página -->
+    <p>Este é um exemplo de página com um cabeçalho fixo.</p>
+    <button onclick="simulateBotResponse()">Simular Resposta do Bot</button>
+</div>
+
+<script>
+    function simulateBotResponse() {
+        var statusElement = document.getElementById('status');
+        statusElement.style.display = 'inline-block';
+
+        // Simula o tempo que o bot leva para responder
+        setTimeout(function() {
+            statusElement.style.display = 'none';
+            alert('Resposta do Bot');
+        }, 2000); // 2 segundos
+    }
+</script>
+
+</body>
+</html>
